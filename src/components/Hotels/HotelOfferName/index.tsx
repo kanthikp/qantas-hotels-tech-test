@@ -6,6 +6,7 @@ interface HotelOfferNameProps {
 const StyledOffer = styled.p`
   color: red;
   text-decoration: underline;
+  margin-bottom: 3em;
 `
 const HotelOfferName = ({ offerName }: HotelOfferNameProps) => {
   return <StyledOffer>{offerName}</StyledOffer>

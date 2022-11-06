@@ -9,22 +9,22 @@ interface HotelImageProps {
 }
 const StyledImage = styled.div<{ url: string }>`
   background-image: ${(props) => `url(${props.url})`};
-  width: 145px;
-  height: 125px;
+  background-size: cover;
+  width: 170px;
+  height: 170px;
 `
-const StyledText = styled.p<{ title: string }>`
+const StyledText = styled.p`
   background-color: 'white';
   color: 'red';
   position: 'absolute';
   margin-left: '1px';
   padding: '5px';
-  z-index: 999;
 `
 
 const HotelImage = ({ previewImage, promotion }: HotelImageProps) => {
   return (
     <StyledImage url={previewImage.url}>
-      {/* <StyledText title={promotion.title} /> */}
+      {/* <StyledText>{promotion.title}</StyledText> */}
       <p
         style={{
           backgroundColor: 'white',

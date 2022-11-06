@@ -13,10 +13,11 @@ const StyledHeading = styled.p`
   text-overflow: ellipsis;
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 0px;
 `
 const HotelName = ({ name, address }: HotelNameProps) => {
   return (
-    <div style={{ marginLeft: 'auto' }}>
+    <div>
       <StyledHeading>{name}</StyledHeading>
       <HotelAddress address={address} />
     </div>
