@@ -1,6 +1,4 @@
-import React from 'react'
-import { deflate } from 'zlib'
-import { PreviewImage, PropertyDetail, Rating } from '../../../types'
+import { Rating } from '../../../types'
 
 interface HotelRatingProps {
   rating: Rating

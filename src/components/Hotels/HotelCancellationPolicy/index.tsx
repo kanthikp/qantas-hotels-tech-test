@@ -1,7 +1,3 @@
-import React from 'react'
-import { deflate } from 'zlib'
-import { PreviewImage, PropertyDetail } from '../../../types'
-
 interface HotelCancellationPolicyProps {
   policy?: string
 }

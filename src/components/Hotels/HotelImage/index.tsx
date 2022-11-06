@@ -1,5 +1,5 @@
 import React from 'react'
-import { deflate } from 'zlib'
+
 import { PreviewImage, Promotion, PropertyDetail } from '../../../types'
 
 interface HotelImageProps {

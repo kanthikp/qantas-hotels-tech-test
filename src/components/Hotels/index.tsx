@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import { deflate } from 'zlib'
+import { useState } from 'react'
 import data from '../../data/data.json'
-import { PropertyDetail } from '../../types'
 import Hotel from './HotelCard'
 
 const Hotels = () => {

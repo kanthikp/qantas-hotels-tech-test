@@ -1,6 +1,4 @@
-import React from 'react'
-import { deflate } from 'zlib'
-import { PreviewImage, Property, PropertyDetail } from '../../../types'
+import { PropertyDetail } from '../../../types'
 import HotelAddress from '../HotelAddress'
 import HotelCancellationPolicy from '../HotelCancellationPolicy'
 import HotelName from '../HotelName'

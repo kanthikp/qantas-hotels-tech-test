@@ -1,6 +1,4 @@
-import React from 'react'
-import { deflate } from 'zlib'
-import { Offer, PreviewImage, PropertyDetail } from '../../../types'
+import { Offer } from '../../../types'
 
 interface HotelPricingProps {
   offer: Offer

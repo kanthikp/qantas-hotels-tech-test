@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Property, PropertyDetail } from '../../../types'
+import { PropertyDetail } from '../../../types'
 import HotelDetail from '../HotelDetail'
 import HotelImage from '../HotelImage'
 import HotelPricing from '../HotelPricing'
