@@ -1,7 +1,14 @@
 import { useState } from 'react'
+import styled from 'styled-components'
 import data from '../../data/data.json'
 import Hotel from './HotelCard'
 
+const StyledContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1em;
+`
 const Hotels = () => {
   const propertyDetailList = data.results
   const [sortOrder, setSortOrder] = useState(1)
@@ -15,8 +22,11 @@ const Hotels = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <p>{`${propertyDetailList.length} hotels in Sydney.`}</p>
+      <StyledContainer>
+        <p>
+          <strong>{`${propertyDetailList.length}`}</strong> <i>hotels in </i>
+          <strong>Sydney</strong>.
+        </p>
         <select
           onChange={(e) => {
             setSortOrder(+e.target.value)
@@ -30,7 +40,7 @@ const Hotels = () => {
             )
           })}
         </select>
-      </div>
+      </StyledContainer>
       {propertyDetailList
         .sort((a, b) => compare(a.offer.displayPrice.amount, b.offer.displayPrice.amount))
         .map((property) => {

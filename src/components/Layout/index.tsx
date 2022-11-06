@@ -24,6 +24,7 @@ const Layout = styled(LayoutStructure)`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 1em;
 `
 
 export default Layout
