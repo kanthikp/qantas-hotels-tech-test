@@ -1,13 +1,12 @@
-import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import Layout from './components/Layout'
+import Hotels from './components/Hotels'
 
 function App() {
   return (
     <div className='App'>
       <Layout>
-        <p>Kanthi</p>
+        <Hotels />
       </Layout>
     </div>
   )
