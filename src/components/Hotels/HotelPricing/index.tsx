@@ -30,7 +30,7 @@ const HotelPricing = ({ offer }: HotelPricingProps) => {
   return (
     <StyledContainer>
       <StyledNightCaption>{`1 night total(${offer.displayPrice.currency})`}</StyledNightCaption>
-      <StyledPrice>${offer.displayPrice.amount}</StyledPrice>
+      <StyledPrice data-testid='displayPrice'>${offer.displayPrice.amount}</StyledPrice>
       <StyledSavings>{offer.savings ? `Save $${offer.savings.amount}~` : null} </StyledSavings>
     </StyledContainer>
   )

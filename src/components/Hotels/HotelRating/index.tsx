@@ -19,23 +19,23 @@ const HotelRating = ({ rating }: HotelRatingProps) => {
     >
       <FontAwesomeIcon
         icon={rating.ratingType === 'star' ? (faStar as IconProp) : (faCircle as IconProp)}
-        color={rating.ratingValue > 1 ? 'orange' : 'gray'}
+        color={rating.ratingValue >= 1 ? 'orange' : 'gray'}
       />
       <FontAwesomeIcon
         icon={rating.ratingType === 'star' ? (faStar as IconProp) : (faCircle as IconProp)}
-        color={rating.ratingValue > 2 ? 'orange' : 'gray'}
+        color={rating.ratingValue >= 2 ? 'orange' : 'gray'}
       />
       <FontAwesomeIcon
         icon={rating.ratingType === 'star' ? (faStar as IconProp) : (faCircle as IconProp)}
-        color={rating.ratingValue > 3 ? 'orange' : 'gray'}
+        color={rating.ratingValue >= 3 ? 'orange' : 'gray'}
       />
       <FontAwesomeIcon
         icon={rating.ratingType === 'star' ? (faStar as IconProp) : (faCircle as IconProp)}
-        color={rating.ratingValue > 4 ? 'orange' : 'gray'}
+        color={rating.ratingValue >= 4 ? 'orange' : 'gray'}
       />
       <FontAwesomeIcon
         icon={rating.ratingType === 'star' ? (faStar as IconProp) : (faCircle as IconProp)}
-        color={rating.ratingValue > 5 ? 'orange' : 'gray'}
+        color={rating.ratingValue >= 5 ? 'orange' : 'gray'}
       />
     </div>
   )
